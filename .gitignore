@@ -1,0 +1,6 @@
+/.env
+.pytest_cache
+reports
+External Libraries
+venv
+
