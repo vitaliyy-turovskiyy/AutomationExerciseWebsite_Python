@@ -32,62 +32,59 @@ class CategoryPage:
         self.thanks_for_message_lbl = page.locator('[style="font-size: 20px;"]')
 
     def check_category_products_sidebar(self):
-        self.category_products_sidebar.is_visible()
+        assert self.category_products_sidebar.is_visible(), "category products sidebar is not visible"
 
-    def women_category_click(self):
+    def click_women_category(self):
         self.women_category.click()
 
-    def category_products1_click(self):
+    def click_category_products1(self):
         self.category_products1.click()
 
-    def men_category_click(self):
+    def click_men_category(self):
         self.men_category.click()
         self.category_products3.click()
 
-    def products_button_click(self):
+    def click_products_button(self):
         self.products_button.click()
 
     def check_brands_products(self):
-        self.brands_products.is_visible()
+        assert self.brands_products.is_visible(), "brands products is not visible"
 
-    def brands_products_babyhug_click(self):
+    def click_brands_products_babyhug(self):
         self.brands_products_babyhug.click()
 
-    def brands_products_polo_click(self):
+    def click_brands_products_polo(self):
         self.brands_products_polo.click()
 
-    def product_add_to_cart_click(self):
+    def click_product_add_to_cart(self):
         self.product_add_to_cart.click()
 
-    def product_add_to_cart2_click(self):
+    def click_product_add_to_cart2(self):
         self.product_add_to_cart2.click()
 
-    def product_add_to_cart3_click(self):
+    def click_product_add_to_cart3(self):
         self.product_add_to_cart3.click()
 
-    def login_btn_click(self):
+    def click_login_btn(self):
         self.login_btn.click()
 
-    def cart_btn_click(self):
+    def click_cart_btn(self):
         self.cart_btn.click()
 
     def check_product_details(self):
-        self.product_details.is_visible()
+        assert self.product_details.is_visible(), "product details is not visible"
 
     def check_write_your_review_lbl(self):
-        self.write_your_review_lbl.is_visible()
+        assert self.write_your_review_lbl.is_visible(), "write your review lbl is not visible"
 
-    def email_review_field_input(self, email):
+    def input_email_review_field(self, email):
         self.email_review_field.fill(email)
 
-    def name_review_field_input(self, name):
+    def input_name_review_field(self, name):
         self.name_review_field.fill(name)
 
-    def review_field_input(self):
-        self.name_review_field.fill("Nice top")
+    def input_review_field(self, comment):
+        self.name_review_field.fill(comment)
 
-    def review_button_click(self):
+    def click_review_button(self):
         self.review_button.click()
-
-    def check_thanks_for_message_lbl(self):
-        self.thanks_for_message_lbl.is_visible()

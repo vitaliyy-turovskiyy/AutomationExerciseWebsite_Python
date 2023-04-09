@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0811f87-d27a-470c-9220-fbe278154886" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Category_Products_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Category_Products_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Contact_Us_Form_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Contact_Us_Form_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Place_Order_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Place_Order_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Products_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Products_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Signup_Login_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Signup_Login_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Subscription_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Subscription_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Category_Products.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Category_Products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Contact_Us_Form.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Contact_Us_Form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Place_Order.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Place_Order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Products.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Signup_Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Signup_Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_Subscription.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +58,8 @@
       <recent name="C:\Users\tanya\Desktop\AutomationExercise_Python\tests\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_Category_Products.TestContactUs.test_TestCase20_Search_Products_and_Verify_Cart_After_Login">
-    <configuration name="Python tests for test_Category_Products.TestContactUs.test_TestCase20_Search_Products_and_Verify_Cart_After_Login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_Contact_Us_Form.TestContactUs.test_TestCase6_Contact_Us_Form">
+    <configuration name="Python tests for test_Contact_Us_Form.TestContactUs.test_TestCase6_Contact_Us_Form" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AutomationExercise_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +69,21 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Category_Products.TestContactUs.test_TestCase20_Search_Products_and_Verify_Cart_After_Login&quot;" />
+      <option name="_new_target" value="&quot;test_Contact_Us_Form.TestContactUs.test_TestCase6_Contact_Us_Form&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_Place_Order.TestContactUs.test_TestCase15_Place_Order_Register_before_Checkout" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AutomationExercise_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_Place_Order.TestContactUs.test_TestCase15_Place_Order_Register_before_Checkout&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -71,7 +101,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_Products.TestContactUs.test_TestCase12_Add_Products_in_Cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_Place_Order.TestContactUs.test_TestCase23_Verify_address_details_in_checkout_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AutomationExercise_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +111,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Products.TestContactUs.test_TestCase12_Add_Products_in_Cart&quot;" />
+      <option name="_new_target" value="&quot;test_Place_Order.TestContactUs.test_TestCase23_Verify_address_details_in_checkout_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_Signup_Login.TestSignup.test_TestCase2_Login_User_with_correct_email_and_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_Place_Order.TestContactUs.test_TestCase24_Download_Invoice_after_purchase_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AutomationExercise_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,31 +125,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Signup_Login.TestSignup.test_TestCase2_Login_User_with_correct_email_and_password&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_Signup_Login.TestSignup.test_TestCase4_Logout_User" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="AutomationExercise_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Signup_Login.TestSignup.test_TestCase4_Logout_User&quot;" />
+      <option name="_new_target" value="&quot;test_Place_Order.TestContactUs.test_TestCase24_Download_Invoice_after_purchase_order&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_Category_Products.TestContactUs.test_TestCase20_Search_Products_and_Verify_Cart_After_Login" />
-        <item itemvalue="Python tests.Python tests for test_Signup_Login.TestSignup.test_TestCase2_Login_User_with_correct_email_and_password" />
+        <item itemvalue="Python tests.Python tests for test_Contact_Us_Form.TestContactUs.test_TestCase6_Contact_Us_Form" />
+        <item itemvalue="Python tests.Python tests for test_Place_Order.TestContactUs.test_TestCase24_Download_Invoice_after_purchase_order" />
+        <item itemvalue="Python tests.Python tests for test_Place_Order.TestContactUs.test_TestCase23_Verify_address_details_in_checkout_page" />
         <item itemvalue="Python tests.Python tests for test_Place_Order.TestContactUs.test_TestCase16_Login_before_Checkout" />
-        <item itemvalue="Python tests.Python tests for test_Signup_Login.TestSignup.test_TestCase4_Logout_User" />
-        <item itemvalue="Python tests.Python tests for test_Products.TestContactUs.test_TestCase12_Add_Products_in_Cart" />
+        <item itemvalue="Python tests.Python tests for test_Place_Order.TestContactUs.test_TestCase15_Place_Order_Register_before_Checkout" />
       </list>
     </recent_temporary>
   </component>

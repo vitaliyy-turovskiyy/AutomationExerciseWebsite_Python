@@ -21,38 +21,38 @@ class SubscriptionPage:
         self.slider_carousel = page.locator('[id="slider-carousel"]')
         self.header = page.locator('[id="header"]')
 
-    def footer_area_scroll(self):
+    def scroll_to_footer_area(self):
         self.footer_area.scroll_into_view_if_needed()
 
     def check_subscription_lbl(self):
-        self.subscription_lbl.is_visible()
+        assert self.subscription_lbl.is_visible(), "subscription lbl is not visible"
 
-    def search_field_fill(self, email):
+    def fill_search_field(self, email):
         self.search_field.fill(email)
 
-    def search_btn_click(self):
+    def click_search_btn(self):
         self.search_btn.click()
 
     def check_success_subscribe_lbl(self):
-        self.success_subscribe_lbl.is_visible()
+        assert self.success_subscribe_lbl.is_visible(), "success subscribe lbl is not visible"
 
-    def cart_btn_click(self):
+    def click_cart_btn(self):
         self.cart_btn.click()
 
     def check_recommended_items(self):
-        self.recommended_items.is_visible()
+        assert self.recommended_items.is_visible(), "recommended items is not visible"
 
-    def product1_btn_click(self):
+    def click_product1_btn(self):
         self.product1_btn.click()
 
     def check_product1_field(self):
-        self.product1_field.is_visible()
+        assert self.product1_field.is_visible(), "product1 field is not visible"
 
-    def arrow_up_click(self):
+    def click_arrow_up(self):
         self.arrow_up.click()
 
     def check_slider_carousel(self):
-        self.slider_carousel.is_visible()
+        assert self.slider_carousel.is_visible(), "slider carousel is not visible"
 
     def scroll_to_header(self):
         self.header.scroll_into_view_if_needed()

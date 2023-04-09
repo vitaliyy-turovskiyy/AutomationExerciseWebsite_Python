@@ -2,6 +2,8 @@ import allure
 import pytest
 
 from playwright.sync_api import Playwright
+from data.test_data import Data
+from pages.Signup_Login_Page import SignupPage
 
 disable_loggers = []
 

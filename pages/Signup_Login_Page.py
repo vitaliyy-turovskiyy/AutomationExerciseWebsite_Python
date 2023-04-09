@@ -17,7 +17,7 @@ class SignupPage:
         self.title_mr = page.locator('[id="id_gender1"]')
         self.password_field = page.locator('[id="password"]')
         self.day_of_birth = page.locator('[id="days"]')
-        self.months_of_birth = page.locator('id="months"')
+        self.months_of_birth = page.locator('[id="months"]')
         self.years_of_birth = page.locator('[id="years"]')
         self.newsletter_checkbox = page.locator('[id="newsletter"]')
         self.logged_in_as_user_lbl = page.locator('//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a')
@@ -45,117 +45,117 @@ class SignupPage:
         self.logout_btn = page.locator('[href="/logout"]')
         self.inform_message_signup = page.locator('//*[@id="form"]/div/div/div[3]/div/form/p')
 
-    def signup_login_btn_click(self):
+    def click_signup_login_btn(self):
         self.signup_login_btn.click()
 
-    def register_login_click(self):
+    def click_register_login(self):
         self.register_login.click()
 
     def check_new_user_signup_lbl(self):
-        self.new_user_signup_lbl.is_visible()
+        assert self.new_user_signup_lbl.is_visible(), "new user signup lbl is not visible"
 
-    def name_input(self, name):
+    def input_name(self, name):
         self.name_field.fill(name)
 
-    def email_signup_input(self, email):
+    def input_email_signup(self, email):
         self.email_signup.fill(email)
 
-    def signup_btn_click(self):
+    def click_signup_btn(self):
         self.signup_btn.click()
 
     def check_enter_account_information_lbl(self):
-        self.enter_account_information_lbl.is_visible()
+        assert self.enter_account_information_lbl.is_visible(), "enter account information lbl is not visible"
 
-    def title_mr_click(self):
+    def click_title_mr(self):
         self.title_mr.click()
 
-    def password_field_input(self, password):
+    def input_password_field(self, password):
         self.password_field.fill(password)
 
-    def day_of_birth_click(self):
+    def click_day_of_birth(self, day):
         self.day_of_birth.click()
-        self.day_of_birth.select_option(value="11")
+        self.day_of_birth.select_option(value=day)
 
-    def months_of_birth_click(self):
+    def months_of_birth_click(self, months):
         self.months_of_birth.click()
-        self.months_of_birth.select_option(value="May")
+        self.months_of_birth.select_option(value=months)
 
-    def years_of_birth_click(self):
+    def years_of_birth_click(self, years):
         self.years_of_birth.click()
-        self.years_of_birth.select_option(value="2004")
+        self.years_of_birth.select_option(value=years)
 
-    def newsletter_checkbox_click(self):
+    def click_newsletter_checkbox(self):
         self.newsletter_checkbox.click()
 
-    def first_name_input(self, firstname):
+    def input_first_name(self, firstname):
         self.first_name_field.fill(firstname)
 
-    def last_name_field_input(self, lastname):
+    def input_last_name_field(self, lastname):
         self.last_name_field.fill(lastname)
 
-    def company_field_input(self, company):
+    def input_company_to_field(self, company):
         self.company_field.fill(company)
 
-    def address1_field_input(self, address):
+    def input_address1_to_field(self, address):
         self.address1_field.fill(address)
 
-    def address2_field_input(self, address2):
+    def input_address2_to_field(self, address2):
         self.address2_field.fill(address2)
 
-    def country_menu_choose(self):
+    def country_menu_choose(self, country):
         self.country_menu.click()
-        self.months_of_birth.select_option(value="New Zealand")
+        self.country_menu.select_option(value=country)
 
-    def state_field_input(self, state):
+    def input_state_to_field(self, state):
         self.state_field.fill(state)
 
-    def city_field_input(self, city):
+    def input_city_to_field(self, city):
         self.city_field.fill(city)
 
-    def zipcode_field_input(self, zipcode):
+    def input_zipcode_to_field(self, zipcode):
         self.zipcode_field.fill(zipcode)
 
-    def mobile_number_field_input(self, mobilenumber):
+    def input_mobile_number(self, mobilenumber):
         self.mobile_number_field.fill(mobilenumber)
 
-    def create_account_btn_click(self):
+    def click_create_account_btn(self):
         self.create_account_btn.click()
 
-    def account_created_lbl_check(self):
-        self.account_created_lbl.is_visible()
+    def check_account_created_lbl(self):
+        assert self.account_created_lbl.is_visible(), "account created lbl is not visible"
 
-    def continue_btn_click(self):
+    def click_continue_btn(self):
         self.continue_btn.click()
 
-    def logged_in_as_user_lbl_check(self):
-        self.logged_in_as_user_lbl.is_visible()
+    def check_logged_in_as_user_lbl(self):
+        assert self.logged_in_as_user_lbl.is_visible(), "logged_in as user lbl is not visible"
 
-    def delete_account_btn_click(self):
+    def click_delete_account_btn(self):
         self.delete_account_btn.click()
 
-    def delete_account_lbl_check(self):
-        self.delete_account_lbl.is_visible()
+    def check_delete_account_lbl(self):
+        assert self.delete_account_lbl.is_visible(), "delete account lbl is not visible()"
 
-    def continue_btn2_click(self):
+    def click_continue_btn2(self):
         self.continue_btn2.click()
 
-    def login_your_account_lbl_check(self):
-        self.login_your_account_lbl.is_visible()
+    def check_login_your_account_lbl(self):
+        assert self.login_your_account_lbl.is_visible(), "login your account lbl is not visible"
 
-    def login_email_address_field_input(self, email2):
+    def input_login_email_address_to_field(self, email2):
         self.login_email_address_field.fill(email2)
 
-    def login_password_field_input(self, password):
+    def input_login_password_to_field(self, password):
         self.login_password_field.fill(password)
 
-    def login_btn_click(self):
+    def click_login_btn(self):
         self.login_btn.click()
 
-    def inform_message_lbl(self):
-        self.inform_message.is_visible()
+    def check_inform_message_lbl(self):
+        assert self.inform_message.is_visible(), "inform message is not visible"
 
-    def logout_btn_click(self):
+    def click_logout_btn(self):
         self.logout_btn.click()
 
-    def inform_message_signup_check(self):
-        self.inform_message_signup.is_visible()
+    def check_inform_message_signup(self):
+        assert self.inform_message_signup.is_visible(), "inform message signup is not visible()"

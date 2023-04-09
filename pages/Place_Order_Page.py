@@ -25,47 +25,47 @@ class OrderPage:
         self.success_message = page.locator('[style="font-size: 20px; font-family: garamond;"]')
         self.download_invoice_btn = page.locator('[class="btn btn-default check_out"]')
 
-    def add_to_card1_click(self):
+    def click_add_to_card1(self):
         self.add_to_card1.click()
 
-    def view_cart_btn_click(self):
+    def click_view_cart_btn(self):
         self.view_cart_btn.click()
 
     def check_out_btn_click(self):
         self.check_out_btn.click()
 
-    def register_login_btn_click(self):
+    def click_register_login_btn(self):
         self.register_login_btn.click()
 
-    def view_cart_button_click(self):
+    def click_view_cart_button(self):
         self.view_cart_button.click()
 
-    def form_control_field_fill(self):
-        self.form_control_field.fill('qwe123')
+    def fill_form_control_field(self, sometext):
+        self.form_control_field.fill(sometext)
 
-    def place_order_btn_click(self):
+    def click_place_order_btn(self):
         self.place_order_btn.click()
 
-    def name_on_card_fill(self, NameonCard):
+    def fill_name_on_card(self, NameonCard):
         self.name_on_card.fill(NameonCard)
 
-    def card_number_fill(self, CardNumber):
+    def fill_card_number(self, CardNumber):
         self.card_number.fill(CardNumber)
 
-    def cvc_number_fill(self, CVC):
+    def fill_cvc_number(self, CVC):
         self.cvc_number.fill(CVC)
 
-    def expiry_month_fill(self, Expiration):
+    def fill_expiry_month(self, Expiration):
         self.expiry_month.fill(Expiration)
 
-    def expiry_year_fill(self, date):
+    def fill_expiry_year(self, date):
         self.expiry_year.fill(date)
 
-    def pay_button_click(self):
+    def click_pay_button(self):
         self.pay_button.click()
 
     def check_success_message(self):
-        self.success_message.is_visible()
+        assert self.success_message.is_visible(), "success message is not visible"
 
-    def download_invoice_btn_click(self):
+    def click_download_invoice_btn(self):
         self.download_invoice_btn.click()

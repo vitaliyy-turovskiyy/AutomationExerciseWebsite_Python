@@ -41,3 +41,15 @@ class Data:
     Expiration = '10'
 
     date = '1999'
+
+    comment = 'Nice top'
+
+    sometext = 'qweasdzxc'
+
+    country = 'New Zealand'
+
+    months = 'April'
+
+    years = '2000'
+
+    day = '11'

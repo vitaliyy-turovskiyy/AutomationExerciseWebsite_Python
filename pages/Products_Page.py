@@ -32,65 +32,65 @@ class ProductsPage:
         self.cart_quantity_delete_btn = page.locator('[class="cart_quantity_delete"]')
         self.empty_cart_lbl = page.locator('[id="empty_cart"]')
 
-    def products_btn_click(self):
+    def click_products_btn(self):
         self.products_btn.click()
 
     def check_products_list(self):
-        self.products_list.is_visible()
+        assert self.products_list.is_visible(), "products list is not visible"
 
-    def view_product_btn_click(self):
+    def click_view_product_btn(self):
         self.view_product_btn.click()
 
     def check_product_name_lbl(self):
-        self.product_name_lbl.is_visible()
+        assert self.product_name_lbl.is_visible(), "product name lbl is not visible"
 
     def check_category_lbl(self):
-        self.category_lbl.is_visible()
+        assert self.category_lbl.is_visible(), "category lbl is not visible"
 
     def check_price_lbl(self):
-        self.price_lbl.is_visible()
+        assert self.price_lbl.is_visible(), "price lbl is not visible"
 
     def check_availability_lbl(self):
-        self.availability_lbl.is_visible()
+        assert self.availability_lbl.is_visible(), "availability lbl is not visible"
 
     def check_condition_lbl(self):
-        self.condition_lbl.is_visible()
+        assert self.condition_lbl.is_visible(), "condition lbl is not visible"
 
     def check_brand_lbl(self):
-        self.brand_lbl.is_visible()
+        assert self.brand_lbl.is_visible(), "brand lbl is not visible"
 
-    def search_btn_click(self):
+    def click_search_btn(self):
         self.search_btn.click()
 
     def check_search_products_lbl(self):
-        self.search_products_lbl.is_visible()
+        assert self.search_products_lbl.is_visible(), "search products lbl is not visible"
 
     def check_products_related_lbl(self):
-        self.products_related_lbl.is_visible()
+        assert self.products_related_lbl.is_visible(), "products related lbl is not visible"
 
     def hover_first_product_img(self):
         self.first_product_img.hover()
 
-    def add_to_cart_btn_click(self):
+    def click_add_to_cart_btn(self):
         self.add_to_cart_btn.click()
 
-    def continue_shopping_btn_click(self):
+    def click_continue_shopping_btn(self):
         self.continue_shopping_btn.click()
 
     def hover_second_product_img(self):
         self.second_product_img.hover()
 
     def check_product_information(self):
-        self.product_information.is_visible()
+        assert self.product_information.is_visible(), "product information is not visible"
 
-    def product_quantity_fill(self):
+    def fill_product_quantity(self):
         self.product_quantity.fill('4')
 
-    def add_to_cart_button_click(self):
+    def click_add_to_cart_button(self):
         self.add_to_cart_button.click()
 
-    def view_cart_btn_click(self):
+    def click_view_cart_btn(self):
         self.view_cart_btn.click()
 
-    def cart_quantity_delete_btn_click(self):
+    def click_cart_quantity_delete_btn(self):
         self.cart_quantity_delete_btn.click()

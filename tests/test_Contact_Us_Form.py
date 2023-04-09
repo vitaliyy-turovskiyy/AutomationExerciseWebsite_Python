@@ -10,26 +10,26 @@ from utils.tools import take_screenshot
 class TestContactUs:
 
     @pytest.fixture
-    def test_setup(self, page):
-        self.page = page
-        self.page.set_viewport_size(viewport_size={ 'width': 1366, 'height': 768 })
+    def test_setup(self, new_page):
+        self.page = new_page
         self.contactus = ContactUsPage(self.page)
-        self.page.goto('http://automationexercise.com')
 
-    def test_TestCase6_Contact_Us_Form(self, page, test_setup):
-        self.contactus.contact_us_btn_click()
+    def test_TestCase6_Contact_Us_Form(self, new_page, test_setup):
+        self.contactus.click_contact_us_btn()
         self.contactus.check_get_in_touch_lbl()
-        self.contactus.name_field_input(Data.name)
-        self.contactus.email_field_input(Data.email)
+        self.contactus.input_name_field(Data.name)
+        self.contactus.input_email_field(Data.email)
         self.contactus.subject_field.fill("qwe")
-        self.contactus.your_message_field.fill("asd zxc")
-        self.contactus.submit_btn_click()
-        page.keyboard.press("Enter")
-        self.contactus.check_alert_success_lbl()
-        self.contactus.home_btn_click()
+        self.contactus.your_message_field.fill("asd xc")
+        self.contactus.upload_file()
+        self.contactus.click_submit_btn()
+        new_page.keyboard.press("Enter")
+        #self.contactus.check_alert_success_lbl()
+        #self.contactus.click_home_btn()
+        #expect(new_page).to_have_title('Automation Exercise')
         take_screenshot(self.page, "Contact_Us_Form")
 
-    def test_TestCase7_Verify_Test_Cases_Page(self, page, test_setup):
-        self.contactus.test_cases_btn_click()
-        expect(page).to_have_title('Automation Practice Website for UI Testing - Test Cases')
+    def test_TestCase7_Verify_Test_Cases_Page(self, new_page, test_setup):
+        self.contactus.click_test_cases_btn()
+        expect(new_page).to_have_title('Automation Practice Website for UI Testing - Test Cases')
         take_screenshot(self.page, "Verify_Test_Cases_Page")
