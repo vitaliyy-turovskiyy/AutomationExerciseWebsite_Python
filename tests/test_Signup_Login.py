@@ -75,5 +75,4 @@ class TestSignup:
         self.signup.input_email_signup(Data.email2)
         self.signup.click_signup_btn()
         self.signup.check_inform_message_signup()
-        self.signup.check_logged_in_as_user_lbl()
         take_screenshot(self.page, "Register_User_with_existing_email")

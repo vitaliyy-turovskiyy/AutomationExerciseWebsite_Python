@@ -158,4 +158,4 @@ class SignupPage:
         self.logout_btn.click()
 
     def check_inform_message_signup(self):
-        assert self.inform_message_signup.is_visible(), "inform message signup is not visible()"
+        assert self.inform_message_signup.is_visible(), "inform message:Email Address already exist! is not visible()"
