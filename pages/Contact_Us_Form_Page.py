@@ -36,7 +36,7 @@ class ContactUsPage:
     def upload_file(self):
         #self.upload_button.set_input_files("testfiles\\test1.txt")
         current_working_dir = os.getcwd()
-        file_path = os.path.join(current_working_dir, 'testfiles\\test1.txt')
+        file_path = os.path.join(current_working_dir, 'testfiles/test1.txt')
 
         with self.page.expect_file_chooser() as fc_info:
             self.upload_button.click()
