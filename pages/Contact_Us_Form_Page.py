@@ -20,7 +20,7 @@ class ContactUsPage:
         self.upload_button = page.locator('[name="upload_file"]')
         self.submit_btn = page.locator('[class="btn btn-primary pull-left submit_form"]')
         self.alert_success_lbl = page.locator('[class="status alert alert-success"]')
-        self.home_btn = page.locator('[id="form-section"]')
+        self.home_btn = page.locator('[class="btn btn-success"]')
         self.test_cases_btn = page.locator('//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a')
 
     def click_contact_us_btn(self):
@@ -45,9 +45,11 @@ class ContactUsPage:
 
     def click_submit_btn(self):
         self.submit_btn.click()
+        self.page.on("dialog", lambda dialog: dialog.accept())
 
     def check_alert_success_lbl(self):
         assert self.alert_success_lbl.is_visible()
+        assert self.alert_success_lbl.text_content()=='Success! Your details have been submitted successfully.'
 
     def click_home_btn(self):
         self.home_btn.click()

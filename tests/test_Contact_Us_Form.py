@@ -23,10 +23,10 @@ class TestContactUs:
         self.contactus.your_message_field.fill("asd xc")
         self.contactus.upload_file()
         self.contactus.click_submit_btn()
-        new_page.keyboard.press("Enter")
-        #self.contactus.check_alert_success_lbl()
-        #self.contactus.click_home_btn()
-        #expect(new_page).to_have_title('Automation Exercise')
+        self.contactus.click_submit_btn()
+        self.contactus.check_alert_success_lbl()
+        self.contactus.click_home_btn()
+        expect(new_page).to_have_title('Automation Exercise')
         take_screenshot(self.page, "Contact_Us_Form")
 
     def test_TestCase7_Verify_Test_Cases_Page(self, new_page, test_setup):
