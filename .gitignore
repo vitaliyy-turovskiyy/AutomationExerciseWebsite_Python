@@ -5,4 +5,4 @@ External Libraries
 venv
 .idea
 __pycache__
-
+reports/*
