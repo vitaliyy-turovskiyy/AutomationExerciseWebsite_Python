@@ -3,4 +3,6 @@
 reports
 External Libraries
 venv
+.idea
+__pycache__
 
