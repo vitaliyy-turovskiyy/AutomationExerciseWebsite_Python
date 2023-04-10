@@ -2,6 +2,8 @@ import os
 
 from playwright.sync_api import Page
 
+from definitions import ROOT_DIR
+
 
 class ContactUsPage:
 
@@ -34,8 +36,7 @@ class ContactUsPage:
         self.name_field.fill(name)
 
     def upload_file(self):
-        current_working_dir = os.getcwd()
-        file_path = os.path.join(current_working_dir, 'testfiles\\test1.txt')
+        file_path = f'{ROOT_DIR}/testfiles/test1.txt'
 
         with self.page.expect_file_chooser() as fc_info:
             self.upload_button.click()
