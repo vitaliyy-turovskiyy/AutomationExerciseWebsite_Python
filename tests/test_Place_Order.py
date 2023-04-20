@@ -128,7 +128,7 @@ class TestContactUs:
         self.signup.click_continue_btn2()
         take_screenshot(self.page, "Verify_address_details_in_checkout_page")
 
-    def test_TestCase24_Download_Invoice_after_purchase_order(self, new_page, test_setup):
+    def test_TestCase24_Download_Invoice_after_purchase_order(self, new_page, test_setup, file=None):
         self.order.click_add_to_card1()
         self.order.click_view_cart_btn()
         expect(new_page).to_have_url('https://automationexercise.com/view_cart')
@@ -154,8 +154,8 @@ class TestContactUs:
         self.order.fill_expiry_year(Data.date)
         self.order.click_pay_button()
         self.order.check_success_message()
-        with self.page.expect_download() as event_info:
-             self.order.click_download_invoice_btn()
+        self.order.click_download_invoice_btn()
+        self.order.check_downloaded_file()
         self.signup.click_continue_btn2()
         self.signup.click_delete_account_btn()
         self.signup.check_delete_account_lbl()

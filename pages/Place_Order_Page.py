@@ -1,4 +1,7 @@
+from _pytest.outcomes import fail
 from playwright.sync_api import Page
+
+from definitions import ROOT_DIR
 
 
 class OrderPage:
@@ -68,4 +71,15 @@ class OrderPage:
         assert self.success_message.is_visible(), "success message is not visible"
 
     def click_download_invoice_btn(self):
-        self.download_invoice_btn.click()
+        with self.page.expect_download() as download_info:
+            self.download_invoice_btn.click()
+        download = download_info.value
+        download.save_as(f'{ROOT_DIR}/utils/invoice.txt')
+
+    def check_downloaded_file(self):
+        try:
+            with open(f'{ROOT_DIR}/utils/invoice.txt') as text:
+                data = text.read()
+                assert "Hi Vit Vitvit, Your total purchase amount is 500. Thank you" in data
+        except FileNotFoundError:
+            fail("File not found!")
